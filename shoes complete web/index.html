@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="shoes1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fons.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <title>Shoes</title>
+</head>
+
+<body onload="myFunction()">
+    <div id="loading">
+
+    </div>
+    <section class="body">
+        <img class="img_bck" src="" alt="">
+        <img class="img_bck1" src="cross.png" alt="">
+        <section>
+            <nav>
+                <a href="" class="logo"><img src="Vector.png" alt=""></a>
+                </div>
+                <div class="flex" id="active">
+
+
+                    <ul>
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
+                        <li><a href="#"> Home</a></li>
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Trending </a></li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="father">
+                <div class="parent">
+                    <h3>Find Shop</h3>
+                    <div class="parent2">
+                        <div class="child1">
+                            <p>USA</p>
+                            <i id="arrow" class="fa fa-angle-down"></i></div>
+                        <input placeholder="Enter Zip or city" type="text">
+                        <div class="child3">
+                            <p>Find shop</p>
+                        </div>
+                    </div><br>
+                    <h3>Store Available</h3><br>
+                    <div class="parent3">
+                        <div class="child01"> <i id="new1" class="fa fa-globe"></i>
+                            <h3>50</h3>
+                            <p>Countries</p>
+                        </div>
+                        <div class="child01"><i id="new1" class="fa fa-building"></i>
+                            <h3>69k</h3>
+                            <p>Cities</p>
+                        </div>
+                        <div class="child01"><i id="new1" class="fa fa-building-o"></i>
+                            <h3>790k</h3>
+                            <p>Stores</p>
+                        </div>
+                        <div class="child01"><i id="new1" class="fa fa-gift"></i>
+                            <h3>100k</h3>
+                            <p>Products</p>
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <div class="pnt_map_img"><img src="Group 223.png" alt=""></div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer_img">
+                            <img src="Heart.png" alt="">
+                            <img src="Profile.png" alt="">
+                            <img src="buy.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+<script>
+    var active = document.getElementById("active");
+
+    function showmenu() {
+        active.style.right = "";
+    }
+
+    function hidemenu() {
+        active.style.right = "-360px";
+    }
+
+    var preloader = document.getElementById('loading')
+
+    function myFunction() {
+        preloader.style.display = 'none'
+    }
+</script>
+
+</html>
