@@ -518,6 +518,7 @@ section.cards {
   );
   background-size: cover;
   justify-content: space-around;
+  overflow: hidden;
 }
 .form_footer .left {
   width: 100%;
